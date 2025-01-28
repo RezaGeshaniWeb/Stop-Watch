@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body>
+    <main class="w-full h-screen bg-body select-none">
+        <div
+            class="bg-timer w-[320px] h-[320px] rounded-lg p-3 lg:scale-125 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-box">
+            <div class="w-full flex items-center justify-between">
+                <div id="start" class="flex flex-col items-center text-center cursor-pointer w-10">
+                    <i class="bi bi-stopwatch text-2xl text-slate-100"></i>
+                    <span class="text-sm text-slate-200">START</span>
+                </div>
+                <div id="reset" class="flex flex-col items-center text-center cursor-pointer">
+                    <i class="bi bi-arrow-clockwise text-2xl text-slate-100"></i>
+                    <span class="text-sm text-slate-200">RESET</span>
+                </div>
+            </div>
+            <ul id="clock"
+                class="*:w-[1px] *:h-[20px] *:rounded-[2px] *:bg-[#f8f8f8] *:absolute *:top-[160px] *:left-[160px]">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div
+                class="text-[#f8f8f8] text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-[300] text-3xl">
+                <span id="hour">00</span>:<span id="minute">00</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+
+        <!-- info -->
+        <div class="hidden w-[170px] h-[170px] rounded-full border-[1px] border-orange-400 outline-[1px] outline-orange-400 
+         outline-offset-8 fixed bottom-[50px] right-[40px] lg:flex items-center justify-center select-none z-50 group">
+            <div class="circle w-[165px] h-[165px] rounded-full">
+                <img src="img/me5.webp" alt="" class="w-full h-full rounded-full object-cover">
+            </div>
+            <strong class="absolute top-[45%] right-[-87px] rotate-[90deg] text-[15px] italic text-slate-100">Frontend
+                Developer</strong>
+            <a href="https://www.linkedin.com/in/reza-geshani-web"><i
+                    class="bi bi-linkedin group-hover:visible text-[26px] text-slate-300 absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-white top-[-10px] left-[-58px]"></i></a>
+            <a href="https://www.instagram.com/rezageshani_web"><i
+                    class="bi bi-instagram group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-white text-slate-300 top-[40px] left-[-80px]"></i></a>
+            <a href="https://github.com/RezaGeshaniWeb/"><i
+                    class="bi bi-github group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-white text-slate-300 top-[90px] left-[-80px]"></i></a>
+            <a href="mailto:rezageshaniweb@gmail.com"><i
+                    class="bi bi-envelope-at group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-white text-slate-300 top-[130px] left-[-58px]"></i></a>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
